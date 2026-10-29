@@ -75,7 +75,7 @@ Reglas:
 1. Nunca crees, edites, renombres, muevas, formatees ni borres nada dentro de clase_de_lisp/, aunque te parezca un error.
 2. Puedes leer, citar, explicar y ejecutar ese código en un REPL sin modificar los archivos.
 3. Si una tarea requiere cambiar algo ahí, detente y pregunta; propone una alternativa fuera de clase_de_lisp/.
-4. Antes de cada commit verifica que `git status --porcelain -- clase_de_lisp/` no muestre nada.
+4. Antes de cada commit verifica con `git diff --cached --name-only -- clase_de_lisp/` que tu commit no incluya nada de clase_de_lisp/. Nunca descartes cambios ahí (pueden ser del autor); si hay algo, sácalo del commit y pregunta.
 5. Respeta el vocabulario y las analogías del autor al explicar el contenido.
 ```
 
