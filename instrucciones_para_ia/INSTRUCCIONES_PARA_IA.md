@@ -51,11 +51,16 @@ git status --porcelain -- clase_de_lisp/
 git diff --cached --name-only -- clase_de_lisp/
 ```
 
-Ambos comandos tienen que **no mostrar nada**. Si muestran algo, deshaz esos cambios antes de seguir:
+Ambos comandos tienen que **no mostrar nada** en lo que tú vas a commitear. Si muestran algo:
 
-```bash
-git restore --staged --worktree -- clase_de_lisp/
-```
+1. **No ejecutes comandos que descarten cambios** (`git restore`, `git checkout --`, `git reset --hard`, `git clean`) sobre `clase_de_lisp/`: esos cambios pueden ser **ediciones del propio autor** que todavía no ha guardado en un commit, y se perderían para siempre.
+2. Saca esos archivos de tu commit sin tocar su contenido:
+
+   ```bash
+   git restore --staged -- clase_de_lisp/
+   ```
+
+3. Si el cambio lo hiciste tú, deshaz **solo tu edición** de forma manual. Si no sabes quién lo hizo, **detente y pregunta al autor**.
 
 ## 6. Prompts listos para usar
 
@@ -114,4 +119,4 @@ Recuerda: clase_de_lisp/ es solo lectura. No toques nada ahí.
 - **Never** create, edit, reformat, fix, rename, move or delete anything inside `clase_de_lisp/` (including the `.fasl` file and files with unusual names), even when asked for broad "improve/clean/fix the repo" tasks.
 - You **may** read, quote, explain and run the code in a REPL without changing the files, and you may edit `README.md`, `docs/`, `AGENTS.md` and `instrucciones_para_ia/` when asked.
 - If a task seems to require touching `clase_de_lisp/`, **stop and ask the author**, and offer an alternative outside that folder.
-- Before every commit, `git status --porcelain -- clase_de_lisp/` must print nothing.
+- Before every commit, nothing under `clase_de_lisp/` may be staged. If it is, unstage with `git restore --staged -- clase_de_lisp/`; never discard working-tree changes there (they may be the author's own uncommitted edits).
