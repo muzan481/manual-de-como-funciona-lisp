@@ -53,7 +53,7 @@ git diff --cached --name-only -- clase_de_lisp/
 
 Ambos comandos tienen que **no mostrar nada** en lo que tú vas a commitear. Si muestran algo:
 
-1. **No ejecutes comandos que descarten cambios** (`git restore`, `git checkout --`, `git reset --hard`, `git clean`) sobre `clase_de_lisp/`: esos cambios pueden ser **ediciones del propio autor** que todavía no ha guardado en un commit, y se perderían para siempre.
+1. **No ejecutes comandos que descarten cambios** (`git restore` sin `--staged`, `git checkout --`, `git reset --hard`, `git clean`) sobre `clase_de_lisp/`: esos cambios pueden ser **ediciones del propio autor** que todavía no ha guardado en un commit, y se perderían para siempre.
 2. Saca esos archivos de tu commit sin tocar su contenido:
 
    ```bash
