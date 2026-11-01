@@ -216,4 +216,4 @@ let*
 ¡Listo! Cajas cerradas. Todo lo que escribas abajo ya puede usar a temp con total libertad.  
 
 
-EN RESUMEN: RECUERDA USAR UN TERCER PARENTESIS EN TU VARIABLE ESTO CIERRA AL let* permitiendote usar la variable que escribiste en su bloque
+EN RESUMEN: RECUERDA USAR UN TERCER PARENTESIS EN TU VARIABLE (o en la ultima si es que creaste varias variables dentro de let*) ESTO CIERRA AL let* permitiendote usar la variable que escribiste en su bloque
