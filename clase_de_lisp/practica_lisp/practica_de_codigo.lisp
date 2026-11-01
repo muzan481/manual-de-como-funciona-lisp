@@ -375,8 +375,8 @@ anadido))
 (defun multiplicacion (forma)
 
 (let* ((temp (cadr forma)))
-       (list (list 'temp e))
-       (list '* temp))
+       (list  (list temp))
+       (cons '* temp))
       
       (eval (multiplicacion '(multiplicacion 9)))
 
@@ -418,8 +418,7 @@ anadido))
        (list (cadr expr)))
 
 
-(car *mi-lista*)
-(cdr *mi-lista*)
+
 (defparameter *mi-lista* '(a b c d))
 
 
