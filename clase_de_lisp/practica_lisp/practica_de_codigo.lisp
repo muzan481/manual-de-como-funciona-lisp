@@ -374,9 +374,9 @@ anadido))
 
 (defun multiplicacion (forma)
 
-(let* ((temp (cadr forma)))
-       (list  (list temp))
-       (cons '* temp))
+(let* ((temp (cadr forma))) ;;cierre de la variable temp para que pueda ser usada en el cuerpo de la función (casi siempre las variables se cierran con un tercer paréntesis para cerrar el let* y que puedan ser usadas en el cuerpo de la función)
+       (list  (list temp)) ;; uso de list para crear una lista con el valor de temp
+       (cons '* temp)) ;; uso de cons para crear una lista con el operador * y el valor de temp
       
       (eval (multiplicacion '(multiplicacion 9)))
 
@@ -412,7 +412,7 @@ anadido))
 (let* ((expr '(+ 2 3)))
        (cons (car expr) (cdr expr)))
 
-(cdr *mi-lista*)
+(cadr *mi-lista*)
 
 (let* ((expr '(+ 2 3)))
        (list (cadr expr)))
@@ -424,3 +424,22 @@ anadido))
 
 (cadr *mi-lista*)
 (cons 'inicio *mi-lista*)
+
+
+
+
+
+
+;;forma 1:
+
+(cons 'a
+ (cons 'b nil))
+
+;forma 2:
+
+ (list 'a 'b)
+ 
+;forma 3:
+
+ (append (list 'a)
+  (list 'b))
