@@ -185,3 +185,35 @@ let*
 6. El entorno desaparece al terminar.
 
 ==================================================
+
+;;OTRA FORMA DE VERLO ES LA SIGUIENTE:
+(defun multiplicacion (forma)
+
+(let* 
+  (;abrimos el bloque let*
+   (temp (cadr forma)) ) ; <- CERRAMOS EL let* CON EL TERCER PARENTECIS: 
+                         ; 1) Cierra el valor de 'temp', 
+                         ; 2) Cierra la cajita de esa única variable, 
+                         ; 3) Cierra la lista general de variables del let*.
+   
+  ;; A partir de aquí estamos en el "cuerpo", la variable ya está viva:
+  (list (list temp))    ; Paso 1: Manipulamos 'temp' (resultado intermedio)
+  (cons '* temp))       ; Paso 2: Retornamos el resultado final de la macro
+        
+      (eval (multiplicacion '(multiplicacion 9)))
+
+
+💡 El misterio de los tres paréntesis ()))) al definir una sola variable:
+
+1. Al principio en Lisp asusta ver ))) juntos, pero es como cerrar tres cajas rusas una dentro de otra:
+
+2. El primer paréntesis cierra el valor de la variable (cadr forma).
+
+3. El segundo cierra la "cajita individual" que contenía a temp.
+
+4. El tercer paréntesis echa el cerrojo definitivo a la zona de declaraciones del let*.
+
+¡Listo! Cajas cerradas. Todo lo que escribas abajo ya puede usar a temp con total libertad.  
+
+
+EN RESUMEN: RECUERDA USAR UN TERCER PARENTESIS EN TU VARIABLE ESTO CIERRA AL let* permitiendote usar la variable que escribiste en su bloque
