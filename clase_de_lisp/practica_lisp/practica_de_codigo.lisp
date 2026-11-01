@@ -372,14 +372,22 @@ anadido))
 
 (mi-cuadrado (+ 2 3))
 
+
 (defun multiplicacion (forma)
 
-(let* ((temp (cadr forma))) ;;cierre de la variable temp para que pueda ser usada en el cuerpo de la función (casi siempre las variables se cierran con un tercer paréntesis para cerrar el let* y que puedan ser usadas en el cuerpo de la función)
-       (list  (list temp)) ;; uso de list para crear una lista con el valor de temp
-       (cons '* temp)) ;; uso de cons para crear una lista con el operador * y el valor de temp
-      
+(let* 
+  (;abrimos el bloque let*
+   (temp (cadr forma)) ) ; <- CERRAMOS EL let* CON EL TERCER PARENTECIS: 
+                         ; 1) Cierra el valor de 'temp', 
+                         ; 2) Cierra la cajita de esa única variable, 
+                         ; 3) Cierra la lista general de variables del let*.
+   
+  ;; A partir de aquí estamos en el "cuerpo", la variable ya está viva:
+  (list (list temp))    ; Paso 1: Manipulamos 'temp' (resultado intermedio)
+  (cons '* temp))       ; Paso 2: Retornamos el resultado final de la macro
+        
       (eval (multiplicacion '(multiplicacion 9)))
-
+        
        (list 
          'progn 
            (list 'let)
@@ -424,7 +432,6 @@ anadido))
 
 (cadr *mi-lista*)
 (cons 'inicio *mi-lista*)
-
 
 
 

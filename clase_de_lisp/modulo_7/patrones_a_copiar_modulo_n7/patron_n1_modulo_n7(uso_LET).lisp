@@ -217,3 +217,4 @@ let*
 
 
 EN RESUMEN: RECUERDA USAR UN TERCER PARENTESIS EN TU VARIABLE (o en la ultima si es que creaste varias variables dentro de let*) ESTO CIERRA AL let* permitiendote usar la variable que escribiste en su bloque
+
