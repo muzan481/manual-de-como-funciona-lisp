@@ -898,8 +898,8 @@ Antes de responder cualquier pregunta basada en esta ficha:
 | 01 | Hart, AIM-057 (1963): property list, `macro[1]`, `define`, `CSETQ`, `GENSYM` | completada |
 | 02 | Weissman, *LISP 1.5 Primer* (1967): `MACRO`, `*EXPAND`, `CSETQ`, reglas | completada |
 | 03 | *LISP 1.5 Programmer's Manual* (1962): a-lists, `DEFLIST`/`GET`, p-lists, `SUBST`/`SUBLIS`, `EVAL`/`APPLY`, `GENSYM` | **esta ficha** |
-| 04 | Moon, *Maclisp Reference Manual* (1974): macro property y reevaluación; contraste posterior | pendiente |
+| 04 | Moon, *MACLISP Reference Manual* (1974): propiedad funcional `macro`, forma completa, reevaluación, compilador | completada (ficha 04) |
 | 05 | Kit cerrado de funciones y presupuesto histórico | pendiente |
 | 06 | Protocolo de lectura y enseñanza para la IA tutora | pendiente |
 
-La ficha 04 mostrará qué cambia cuando las macros pasan a Maclisp y por qué ese contraste ayuda a no retroproyectar rasgos modernos al mecanismo de 1963. La ficha 05 cerrará el kit de funciones; la 06 dará el protocolo de lectura para la IA tutora.
+La ficha 04 muestra qué cambia cuando las macros pasan a MACLISP y por qué ese contraste ayuda a no retroproyectar rasgos modernos al mecanismo de 1963. La ficha 05 cerrará el kit de funciones; la 06 dará el protocolo de lectura para la IA tutora.
