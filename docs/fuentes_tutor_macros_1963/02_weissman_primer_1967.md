@@ -660,7 +660,7 @@ Antes de responder cualquier pregunta basada en esta ficha:
 | 02 | Weissman, *LISP 1.5 Primer* (1967): `MACRO`, `*EXPAND`, `CSETQ`, reglas | **esta ficha** |
 | 03 | *LISP 1.5 Programmer's Manual*: `PAIRLIS`, `ASSOC`, `SUBLIS`, `EVAL`, `APPLY`, `GENSYM`, property lists | completada (ficha 03) |
 | 04 | Moon, *MACLISP Reference Manual* (1974): propiedad funcional `macro`, forma completa, reevaluación, compilador | completada (ficha 04) |
-| 05 | Kit cerrado de funciones y presupuesto histórico | pendiente |
+| 05 | Kit cerrado de funciones y presupuesto histórico | completada (ficha 05) |
 | 06 | Protocolo de lectura y enseñanza para la IA tutora | pendiente |
 
 La ficha 03 amplía el kit de sustitución (`PAIRLIS`, `ASSOC`, `SUBLIS`) y el `EVAL`/`APPLY` que el *Primer* da por conocidos. La ficha 06 será la que indique, en una sola página, **qué archivos debe leer la IA, en qué orden y con qué reglas**.
