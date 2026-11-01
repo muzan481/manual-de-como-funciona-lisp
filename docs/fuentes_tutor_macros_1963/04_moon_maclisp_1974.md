@@ -765,6 +765,6 @@ Antes de responder cualquier pregunta basada en esta ficha:
 | 03 | *LISP 1.5 Programmer's Manual* (1962): a-lists, `DEFLIST`/`GET`, p-lists, `SUBST`/`SUBLIS`, `EVAL`/`APPLY`, `GENSYM` | completada |
 | 04 | Moon, *MACLISP Reference Manual* (1974): propiedad funcional `macro`, forma completa, reevaluación, compilador, `(macros t)` | **esta ficha** |
 | 05 | Kit cerrado de funciones y presupuesto histórico | completada (ficha 05) |
-| 06 | Protocolo de lectura y enseñanza para la IA tutora | pendiente |
+| 06 | Protocolo de lectura y enseñanza para la IA tutora | completada (ficha 06) |
 
-La ficha 04 muestra el contraste posterior: qué se conserva de 1963 (la p-list, la forma completa, la construcción de listas) y qué se añade en MACLISP (la reevaluación, el compilador, la retención en runtime). La ficha 05 cierra el kit de funciones; la 06 dará el protocolo de lectura para la IA tutora.
+La ficha 04 muestra el contraste posterior: qué se conserva de 1963 (la p-list, la forma completa, la construcción de listas) y qué se añade en MACLISP (la reevaluación, el compilador, la retención en runtime). La ficha 05 cierra el kit de funciones; la 06 da el protocolo de lectura para la IA tutora.

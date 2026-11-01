@@ -692,6 +692,6 @@ Antes de responder cualquier pregunta basada en esta ficha:
 | 03 | *LISP 1.5 Programmer's Manual* (1962): a-lists, `DEFLIST`/`GET`, p-lists, `SUBST`/`SUBLIS`, `EVAL`/`APPLY`, `GENSYM` | completada |
 | 04 | Moon, *MACLISP Reference Manual* (1974): propiedad funcional `macro`, forma completa, reevaluación, compilador | completada |
 | 05 | Kit cerrado de funciones y presupuesto histórico | **esta ficha** |
-| 06 | Protocolo de lectura y enseñanza para la IA tutora | pendiente |
+| 06 | Protocolo de lectura y enseñanza para la IA tutora | completada (ficha 06) |
 
-Esta ficha 05 es la referencia normativa del kit y prevalece sobre los resúmenes de las fichas 01–04. La ficha 06 será el protocolo de lectura: qué archivos debe leer la IA, en qué orden y con qué reglas.
+Esta ficha 05 es la referencia normativa del kit y prevalece sobre los resúmenes de las fichas 01–04. La ficha 06 es el protocolo de lectura: qué archivos debe leer la IA, en qué orden y con qué reglas.
