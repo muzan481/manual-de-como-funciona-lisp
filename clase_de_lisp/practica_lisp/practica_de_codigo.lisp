@@ -451,4 +451,11 @@ anadido))
  (append (list 'a)
   (list 'b))
 
-  
+(defvar x nil)
+
+
+ (cond ((null x) "vacio")
+       (t (print "lleno")))
+
+
+
