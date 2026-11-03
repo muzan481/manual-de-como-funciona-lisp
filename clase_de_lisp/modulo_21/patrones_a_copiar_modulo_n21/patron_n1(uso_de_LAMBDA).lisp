@@ -35,3 +35,4 @@ Si el número de parámetros y de valores no coincide:
 
 ---
 
+en resumen: LAMBDA debe recibir exactamente el mismo número de valores Y de parámetros, y si no es así, se producirá un error.
