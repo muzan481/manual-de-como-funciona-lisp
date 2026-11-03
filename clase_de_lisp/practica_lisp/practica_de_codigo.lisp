@@ -458,4 +458,24 @@ anadido))
        (t (print "lleno")))
 
 
+;;forma 1:
+(defun construccion-suma (forma)
+       (cons '+ (cdr forma)))
 
+(eval (construccion-suma '(suma 10 20)))
+
+
+
+
+(caddr '(defun suma (x y) (+ x y)))
+
+(cadr '(defun suma (x y) (+ x y)))
+
+(list 'defun 'suma
+ (append (list 'x 'y))
+  (list '+ 'x 'y))
+
+  (list 'defun 'suma (list 'x 'y) (list '+ 'x 'y))
+
+
+  
